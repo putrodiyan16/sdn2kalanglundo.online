@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDN 2 Kalanglundo - Cerdas, Berkarakter, Ceria</title>
     <!-- Google Fonts & Font Awesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ================= ELEMENT LATAR BELAKANG ANIMASI ================= -->
+    <div class="animated-bg">
+        <!-- Awan Bergerak -->
+        <div class="cloud cloud-1"><i class="fa-solid fa-cloud"></i></div>
+        <div class="cloud cloud-2"><i class="fa-solid fa-cloud"></i></div>
+        <div class="cloud cloud-3"><i class="fa-solid fa-cloud"></i></div>
+        <!-- Ikon Sekolah & Bermain Melayang -->
+        <div class="school-item item-1"><i class="fa-solid fa-pencil"></i></div>
+        <div class="school-item item-2"><i class="fa-solid fa-book-open"></i></div>
+        <div class="school-item item-3"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="school-item item-4"><i class="fa-solid fa-balloon"></i></div>
+        <div class="school-item item-5"><i class="fa-solid fa-shapes"></i></div>
+        <div class="school-item item-6"><i class="fa-solid fa-paper-plane"></i></div>
+    </div>
 
     <!-- ================= NAVBAR ================= -->
     <header class="navbar">
@@ -34,17 +49,11 @@
 
     <!-- ================= HERO / BERANDA ================= -->
     <section id="beranda" class="hero-section">
-        <!-- Element Animasi Melayang Khas Sekolah -->
-        <div class="floating-bubble bubble-1"><i class="fa-solid fa-book-open"></i></div>
-        <div class="floating-bubble bubble-2"><i class="fa-solid fa-pencil"></i></div>
-        <div class="floating-bubble bubble-3"><i class="fa-solid fa-star"></i></div>
-        <div class="floating-bubble bubble-4"><i class="fa-solid fa-palette"></i></div>
-
         <div class="hero-content">
             <span class="badge">Selamat Datang di Website Resmi</span>
             <h1>SDN 2 Kalanglundo</h1>
-            <p>Mewujudkan Generasi Cerdas, Berprestasi, Berkarakter, dan Berwawasan Global.</p>
-            <a href="#visi-misi" class="btn-primary">Jelajahi Sekolah <i class="fa-solid fa-arrow-right"></i></a>
+            <p>Mewujudkan Generasi Cerdas, Berprestasi, Berkarakter, dan Ceria!</p>
+            <a href="#visi-misi" class="btn-primary">Jelajahi Sekolah <i class="fa-solid fa-rocket"></i></a>
         </div>
     </section>
 
@@ -64,23 +73,22 @@
                 <div class="icon-box"><i class="fa-solid fa-bullseye"></i></div>
                 <h3>Misi Sekolah</h3>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Menanamkan nilai keimanan dan ketaqwaan melalui pembiasaan keagamaan.</li>
-                    <li><i class="fa-solid fa-check"></i> Mengembangkan pembelajaran yang kreatif, inovatif, dan menyenangkan.</li>
-                    <li><i class="fa-solid fa-check"></i> Membina bakat siswa melalui kegiatan ekstrakurikuler.</li>
-                    <li><i class="fa-solid fa-check"></i> Menerapkan budaya sekolah yang bersih, sehat, dan asri.</li>
+                    <li><i class="fa-solid fa-star"></i> Menanamkan nilai keimanan dan ketaqwaan melalui pembiasaan keagamaan.</li>
+                    <li><i class="fa-solid fa-star"></i> Mengembangkan pembelajaran yang kreatif, inovatif, dan menyenangkan.</li>
+                    <li><i class="fa-solid fa-star"></i> Membina bakat siswa melalui kegiatan ekstrakurikuler.</li>
+                    <li><i class="fa-solid fa-star"></i> Menerapkan budaya sekolah yang bersih, sehat, dan asri.</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <!-- ================= PROFIL GURU ================= -->
-    <section id="guru" class="section-padding bg-light">
+    <section id="guru" class="section-padding">
         <div class="section-title">
             <h2>Profil Guru & Staf</h2>
-            <p>Tenaga pendidik profesional dan berdedikasi</p>
+            <p>Tenaga pendidik ramah, berdedikasi, dan ceria</p>
         </div>
         <div class="guru-grid">
-            <!-- Edit Foto Guru: Ganti URL src gambar di bawah ini -->
             <div class="guru-card">
                 <div class="img-wrapper cool-effect">
                     <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400" alt="Kepala Sekolah">
@@ -111,40 +119,39 @@
     <section id="ekstrakurikuler" class="section-padding">
         <div class="section-title">
             <h2>Ekstrakurikuler</h2>
-            <p>Wadah pengembangan bakat dan minat siswa</p>
+            <p>Aktivitas seru untuk mengembangkan potensi siswa</p>
         </div>
         <div class="ekstra-grid">
-            <div class="ekstra-card">
+            <div class="ekstra-card card-yellow">
                 <i class="fa-solid fa-campground ekstra-icon"></i>
                 <h3>Pramuka</h3>
-                <p>Melatih kemandirian, kedisiplinan, dan jiwa kepemimpinan siswa.</p>
+                <p>Melatih kemandirian, kedisiplinan, dan kebersamaan.</p>
             </div>
-            <div class="ekstra-card">
+            <div class="ekstra-card card-green">
                 <i class="fa-solid fa-futbol ekstra-icon"></i>
                 <h3>Sepak Bola / Futsal</h3>
-                <p>Mengembangkan kebugaran jasmani dan kerjasama tim yang solid.</p>
+                <p>Mengembangkan kesehatan jasmani dan kerjasama tim.</p>
             </div>
-            <div class="ekstra-card">
+            <div class="ekstra-card card-orange">
                 <i class="fa-solid fa-palette ekstra-icon"></i>
                 <h3>Seni Melukis</h3>
-                <p>Mengasah imajinasi dan kreativitas anak dalam bidang seni rupa.</p>
+                <p>Mengasah daya imajinasi dan kreativitas visual anak.</p>
             </div>
-            <div class="ekstra-card">
+            <div class="ekstra-card card-purple">
                 <i class="fa-solid fa-music ekstra-icon"></i>
-                <h3>Seni Tari & Musik</h3>
-                <p>Melestarikan budaya tradisional dan seni pertunjukan anak.</p>
+                <h3>Seni Musik & Seni Tari</h3>
+                <p>Melestarikan kesenian daerah dan melatih irama anak.</p>
             </div>
         </div>
     </section>
 
-    <!-- ================= KEGIATAN SISWA (GOOGLE DRIVE INTEGRATION) ================= -->
-    <section id="kegiatan" class="section-padding bg-light">
+    <!-- ================= KEGIATAN SISWA ================= -->
+    <section id="kegiatan" class="section-padding">
         <div class="section-title">
             <h2>Dokumentasi Kegiatan Siswa</h2>
-            <p>Galeri keseruan dan momen berharga di sekolah</p>
+            <p>Galeri keseruan dan momen berharga di SDN 2 Kalanglundo</p>
         </div>
 
-        <!-- Opsi 1: Galeri Foto Elegan -->
         <div class="gallery-grid">
             <div class="gallery-item cool-effect">
                 <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600" alt="Upacara">
@@ -166,13 +173,11 @@
             </div>
         </div>
 
-        <!-- Opsi 2: Sematan Google Drive (Opsional) -->
         <div class="drive-box">
-            <h3><i class="fa-brands fa-google-drive"></i> Folder Galeri Google Drive</h3>
-            <p>Untuk melihat seluruh foto & video kegiatan lengkap, silakan klik tombol di bawah ini:</p>
-            <!-- GANTI LINK DI BAWAH DENGAN LINK FOLDER GOOGLE DRIVE SEKOLAH -->
+            <h3><i class="fa-brands fa-google-drive"></i> Galeri Foto & Video Google Drive</h3>
+            <p>Lihat semua arsip keseruan siswa secara lengkap di folder Google Drive kami:</p>
             <a href="https://drive.google.com" target="_blank" class="btn-secondary">
-                <i class="fa-solid fa-folder-open"></i> Buka Drive Galeri Sekolah
+                <i class="fa-solid fa-folder-open"></i> Buka Drive Sekolah
             </a>
         </div>
     </section>
@@ -181,18 +186,16 @@
     <section id="kontak" class="section-padding">
         <div class="section-title">
             <h2>Hubungi Kami & Masukan</h2>
-            <p>Kami siap melayani dan mendengarkan masukan dari Anda</p>
+            <p>Kami sangat terbuka menerima masukan dan kritik membangun</p>
         </div>
 
         <div class="kontak-container">
-            <!-- Informasi Kontak -->
             <div class="kontak-info">
                 <h3>Informasi Sekolah</h3>
                 <div class="info-item">
                     <i class="fa-solid fa-location-dot"></i>
                     <div>
                         <strong>Alamat:</strong>
-                        <!-- EDIT ALAMAT DI SINI -->
                         <p>Jl. Raya Kalanglundo No. 02, Kec. Ngaringan, Kab. Grobogan, Jawa Tengah</p>
                     </div>
                 </div>
@@ -200,7 +203,6 @@
                     <i class="fa-solid fa-phone"></i>
                     <div>
                         <strong>Telepon / WhatsApp:</strong>
-                        <!-- EDIT TELEPON DI SINI -->
                         <p>+62 812-3456-7890</p>
                     </div>
                 </div>
@@ -208,13 +210,11 @@
                     <i class="fa-solid fa-envelope"></i>
                     <div>
                         <strong>Email Resmi:</strong>
-                        <!-- EDIT EMAIL DI SINI -->
                         <p>info@sdn2kalanglundo.sch.id</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Form Kritik dan Saran -->
             <div class="form-kritik">
                 <h3>Kritik & Saran</h3>
                 <form id="feedbackForm">
@@ -241,18 +241,17 @@
         </div>
     </section>
 
-    <!-- ================= FOOTER & SOSIAL MEDIA ================= -->
+    <!-- ================= FOOTER ================= -->
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
                 <h3>SDN 2 Kalanglundo</h3>
-                <p>Membentuk karakter mulia dan mengasah potensi peserta didik sejak dini.</p>
+                <p>Membentuk karakter mulia, ceria, dan mengasah potensi siswa sejak dini.</p>
             </div>
             
             <div class="footer-sosmed">
-                <h4>Ikuti Media Sosial Kami</h4>
+                <h4>Sosial Media Kami</h4>
                 <div class="sosmed-links">
-                    <!-- EDIT URL MEDIA SOSIAL SEKOLAH DI SINI -->
                     <a href="https://facebook.com" target="_blank" class="facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://instagram.com" target="_blank" class="instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://tiktok.com" target="_blank" class="tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
