@@ -199,6 +199,7 @@ body {
     background-color: var(--sky-blue);
     color: var(--accent-blue);
 }
+
 /* ================= HERO SECTION ================= */
 .hero-section {
     height: 100vh;
@@ -288,10 +289,9 @@ body {
     margin-top: 5px;
 }
 
-/* ================= PROFIL GURU GRID (3x3) ================= */
+/* ================= PROFIL GURU GRID (3x3 & RAPI DENGAN BINGKAI) ================= */
 .guru-grid {
     display: grid;
-    /* Membuat grid 3 kolom pada layar sedang/besar */
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
@@ -311,9 +311,35 @@ body {
 }
 
 .guru-card .img-wrapper {
-    height: 280px;
+    width: 100%;            /* Lebar frame mengikuti kartu */
+    height: 280px;          /* Tinggi frame konsisten */
     margin-bottom: 15px;
     border-radius: 16px;
+    overflow: hidden;       /* MENCEGAH FOTO KELUAR BINGKAI */
+    position: relative;
+    background-color: #e2e8f0; /* Latar cadangan saat foto dimuat */
+}
+
+/* EFEK KEREN FOTO & PEMOTONGAN PRESISI */
+.cool-effect {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.cool-effect img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* MEMAKSA FOTO PAS DI DALAM FRAME TANPA GEPENG */
+    object-position: center top; /* Fokus ke area wajah/atas foto */
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1), filter 0.5s ease;
+}
+
+.cool-effect:hover img {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.08);
 }
 
 /* ================= EKSTRAKURIKULER ================= */
