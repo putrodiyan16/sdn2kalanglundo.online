@@ -137,13 +137,13 @@ body {
     background-color: #1d4ed8;
 }
 
-/* ================= NAVBAR (RAPI & DUA BARIS CEGAH) ================= */
+/* ================= NAVBAR (FIX TEKS PASTI 1 BARIS) ================= */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 4%; /* Disesuaikan sedikit agar muat dengan rapi di layar */
-    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px 3%; /* Area padding samping diperlebar ruangnya */
+    background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -155,37 +155,44 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    white-space: nowrap; /* Menjaga nama logo tetap 1 baris */
+    gap: 8px;
+    flex-shrink: 0; /* Mencegah logo terkikis/mengecil */
 }
 
 .logo-icon {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #f59e0b;
 }
 
 .logo-text {
     font-family: 'Fredoka', cursive;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--primary-blue);
-    white-space: nowrap; /* Menjaga teks logo tidak turun ke bawah */
+    white-space: nowrap !important; /* Paksa teks logo 1 baris */
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 12px; /* Jarak antar menu diperhalus agar presisi */
+    gap: 4px; /* Jarak rapat antar menu */
     align-items: center;
+    flex-wrap: nowrap !important; /* Paksa seluruh menu TIDAK BOLEH turun baris */
+}
+
+.nav-links li {
+    white-space: nowrap !important;
 }
 
 .nav-links a {
+    display: inline-block;
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 600;
-    padding: 6px 12px;
+    font-size: 0.88rem; /* Ukuran teks sedikit diperkecil agar muat sempurna */
+    padding: 6px 10px;  /* Spasi dalam tombol diperramping */
     border-radius: 20px;
     transition: var(--transition);
-    white-space: nowrap; /* Menjaga teks menu (misal: "Visi & Misi") sejajar 1 baris */
+    white-space: nowrap !important; /* Mencegah kata "Visi & Misi" terbelah */
 }
 
 .nav-links a:hover {
